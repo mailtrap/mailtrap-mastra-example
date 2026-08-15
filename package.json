@@ -1,0 +1,23 @@
+{
+  "name": "mailtrap-mastra-workspace",
+  "private": true,
+  "license": "MIT",
+  "author": "Railsware Products Studio LLC",
+  "homepage": "https://mailtrap.io",
+  "repository": "https://github.com/mailtrap/mailtrap-mastra-example",
+  "bugs": "https://github.com/mailtrap/mailtrap-mastra-example/issues",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace @mailtrap/mastra build",
+    "start": "yarn workspace welcome-email start",
+    "lint:tsc": "yarn workspace @mailtrap/mastra lint:tsc && yarn workspace welcome-email lint:tsc"
+  },
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=1.22.17"
+  },
+  "packageManager": "yarn@1.22.22"
+}
