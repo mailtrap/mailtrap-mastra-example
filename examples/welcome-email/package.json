@@ -1,0 +1,21 @@
+{
+  "name": "welcome-email",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/run.ts",
+    "lint:tsc": "tsc --noEmit --incremental false"
+  },
+  "dependencies": {
+    "@mailtrap/mastra": "*",
+    "@mastra/core": "^1.59.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
